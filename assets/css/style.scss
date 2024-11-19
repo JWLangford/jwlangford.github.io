@@ -2,3 +2,50 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+img {
+  border-radius: 10px;
+  border: 1px solid #006599;
+}
+
+/* Social Links Styling */
+.social-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #007acc; /* Change to your preferred color */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #006599; /* Change to a hover color of your choice */
+}
+
+#medium-feed {
+  list-style-type: none;
+  padding: 0;
+}
+
+#medium-feed li {
+  margin-bottom: 10px;
+}
+
+#medium-feed a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+#medium-feed a:hover {
+  color: #007acc;
+}
+
+.medium-feed-link {
+  display: none;
+}
