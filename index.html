@@ -2,7 +2,34 @@
 layout: default
 ---
 
-<ul id="medium-feed"></ul>
+<ul id="medium-feed">
+  <li>
+    <a
+      href="https://betterprogramming.pub/the-most-important-thing-i-did-to-become-a-senior-developer-2c9aaeaa35f6"
+      target="_blank"
+      >The Most Important Thing I Did to Become a Senior Developer</a
+    >
+    <div class="medium-feed-item">
+      <p class="medium-feed-image">
+        <a
+          href="https://betterprogramming.pub/the-most-important-thing-i-did-to-become-a-senior-developer-2c9aaeaa35f6"
+          ><img
+            src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*q2cnppV0gkrCV9DWFwFjRQ.jpeg"
+            width="1792"
+        /></a>
+      </p>
+      <p class="medium-feed-snippet">
+        If I had to pick one thing, this would be it
+      </p>
+      <p class="medium-feed-link">
+        <a
+          href="https://betterprogramming.pub/the-most-important-thing-i-did-to-become-a-senior-developer-2c9aaeaa35f6"
+          >Continue reading</a
+        >
+      </p>
+    </div>
+  </li>
+</ul>
 
 <a href="https://jesse-94998.medium.com/" target="_blank"> See All </a>
 
@@ -15,6 +42,7 @@ layout: default
       console.log(data);
       const container = document.getElementById("medium-feed");
       // const pinnedStory = data.items.find((item) => item.categories.length > 0);
+
       data.items.slice(0, 10).forEach((item) => {
         console.log(item);
         const listItem = document.createElement("li");

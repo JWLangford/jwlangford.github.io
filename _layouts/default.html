@@ -24,7 +24,14 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <a href="./about">About</a>
+        <nav>
+            {% if page.url != "/" %}
+              <a href="/">Home</a>
+            {% endif %}
+            {% if page.url != "/about.html" %}
+              <a href="/about">About</a>
+            {% endif %}
+        </nav>
 
         <ul class="social-links">
           <li>
