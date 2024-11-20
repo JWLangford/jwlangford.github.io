@@ -4,13 +4,17 @@ layout: default
 
 <ul id="medium-feed"></ul>
 
+<a href="https://jesse-94998.medium.com/" target="_blank"> See All </a>
+
 <script>
   const mediumFeedUrl = "https://medium.com/feed/@jesse-94998";
 
   fetch("https://api.rss2json.com/v1/api.json?rss_url=" + mediumFeedUrl)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       const container = document.getElementById("medium-feed");
+      // const pinnedStory = data.items.find((item) => item.categories.length > 0);
       data.items.slice(0, 10).forEach((item) => {
         console.log(item);
         const listItem = document.createElement("li");
